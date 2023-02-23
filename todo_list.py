@@ -6,15 +6,19 @@ while True:
         case 'add':
             todo = input('Enter a todo: ') + "\n"
 
-            file = open('todos.txt', 'r')
+            file = open('files/todos.txt', 'r')
             todos = file.readlines()
 
             todos.append(todo)
             todos.sort()
-            file = open('todos.txt', 'w')
+            file = open('files/todos.txt', 'w')
             file.writelines(todos)
             file.close()
         case 'show' | 'display':
+            file = open('files/todos.txt', 'r')
+            todos = file.readlines()
+            file.close()
+
             if len(todos) == 0:
                 print('List contains no items')
             else:
