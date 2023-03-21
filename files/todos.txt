@@ -2,3 +2,6 @@ walk the dogs
 test the code
 prepare coffee
 take some rest
+print documents
+play the guitar
+listen to music
